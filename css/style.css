@@ -1,69 +1,163 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: grey;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .wrapper {
     width: 100%;
     height: 100vh;
-    background-color: red;
+    background-color: black;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 90px;
-    background-color: orange;
+section {
+    border: 1px solid black;
+}
+
+#section_1 {
+    height: 250px;
+}
+
+#section_2 {
+    height: calc(100% - 320px);
+    overflow-y: auto;
+}
+
+#section_3 {
+    height: 70px;
 }
 
 .main_nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 230px;
+    width: 250px;
     height: calc(100% - 90px);
-    background-color: green;
+    background-color: rgb(32, 100, 38);
 }
 
-.main_nav_logo {
-    min-height: 10%;
-    background-color: lightseagreen;
+.main_nav_container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 100%;
 }
 
-.main_nav_home {
-    min-height: 20%;
-    background-color: rgb(0, 81, 255);
+
+
+.logo img {
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
-.main_nav_playlist {
-    height: 55%;
-    overflow-y: auto;
+.web_app_section img {
+    width: 14%;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
-.main_nav_playlist ul li:first-child {
+.web_app_section div {
+    display: inline-block;
+
+}
+
+.web_app_section span {
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.web_app_section a {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+.web_app_section a:hover {
+    color: white;
+}
+
+.playlist_section h4 {
+    margin-top: 20px;
+    margin-left: 15px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#add {
+    margin-left: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: lightgrey;
+    padding: 0 10px;
+}
+
+#add a {
+    text-decoration: none;
+    color: black;
+}
+
+#add_text {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#add_text a {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+#add_text a:hover {
+    color: white;
+}
+
+.playlist_section ul {
+    margin-left: 15px;
     margin-top: 20px;
 }
 
-.main_nav_playlist ul li {
+.playlist_section ul li {
+    list-style: none;
     padding-bottom: 10px;
 }
 
-.main_nav_user {
-    height: 15%;
-    background-color: mediumslateblue;
+.playlist_section ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: lightgrey;
+}
+
+.playlist_section ul li a:hover {
+    color: white;
 }
 
 .main_content {
-    width: calc(100% - 230px);
-    /* height: calc(100% - 90px); */
-    margin-left: 230px;
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    height: calc(100% - 90px);
     overflow-y: auto;
-    background-color: lightgreen;
+    background-color: grey;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: red;
+}
+
+
+
+
+
+
