@@ -465,6 +465,10 @@ footer {
     color: white;
 }
 
+.footer_container_center_top i:hover {
+    cursor: pointer;
+}
+
 .footer_container_center_bottom {
     margin-top: 15px;
 }
