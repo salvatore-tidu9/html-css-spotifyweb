@@ -234,6 +234,7 @@ hr {
     width: calc(100% - 250px);
     height: 100px;
     margin-left: 250px;
+    z-index: 1;
     background-color: rgba(8,11,18,1);
 }
 
